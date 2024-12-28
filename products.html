@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Quality Trading</title>
+    <style>
+        /* Resetting some default styles */
+        body, h1, h2, p, a {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background-color: #0f4b5c;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        nav {
+            margin: 20px 0;
+        }
+
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #f0a500;
+        }
+
+        .products-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 30px;
+            padding: 40px;
+            animation: slideIn 1.5s ease-out;
+        }
+
+        .product-card {
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .product-card img {
+            width: 100%;
+            border-radius: 8px 8px 0 0;
+        }
+
+        .product-card h3 {
+            text-align: center;
+            padding: 15px 0;
+            font-size: 1.6rem;
+            color: #333;
+        }
+
+        .product-card p {
+            padding: 0 20px 20px;
+            color: #777;
+            font-size: 1rem;
+            text-align: center;
+        }
+
+        .product-card .price {
+            text-align: center;
+            font-size: 1.4rem;
+            padding: 10px 0;
+            color: #f0a500;
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+        }
+
+        footer {
+            background-color: #0f4b5c;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #f0a500;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Quality Trading - Products</h1>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="#products">Products</a>
+            <a href="https://wa.me/9037493068" target="_blank">WhatsApp</a>
+        </nav>
+    </header>
+
+    <section id="products" class="products-container">
+        <div class="product-card">
+            <img src="notebook.webp" alt="Notebook">
+            <h3>Notebook</h3>
+            <p>A high-quality notebook for school and office use, with durable pages.</p>
+            <p class="price">₹100</p>
+            <a href="https://wa.me/9037493068?text=I'm%20interested%20in%20the%20Notebook" class="cta-button">Buy Now</a>
+        </div>
+
+        <div class="product-card">
+            <img src="pen.webp" alt="pen">
+            <h3>Pen Set</h3>
+            <p>Complete your stationery collection with our premium pen sets available in different colors.</p>
+            <p class="price">₹150</p>
+            <a href="https://wa.me/9037493068?text=I'm%20interested%20in%20the%20Pen%20Set" class="cta-button">Buy Now</a>
+        </div>
+
+        <div class="product-card">
+            <img src="papperclips.jpg" alt="papperclips">
+            <h3>Paper Clips</h3>
+            <p>Essential for organizing documents at home, school, or office.</p>
+            <p class="price">₹50</p>
+            <a href="https://wa.me/9037493068?text=I'm%20interested%20in%20the%20Paper%20Clips" class="cta-button">Buy Now</a>
+        </div>
+
+        <div class="product-card">
+            <img src="whiteboard_marker.jpeg" alt="whiteboard_marker">
+            <h3>Whiteboard Markers</h3>
+            <p>Markers perfect for classrooms and offices, offering smooth writing and easy cleaning.</p>
+            <p class="price">₹120</p>
+            <a href="https://wa.me/9037493068?text=I'm%20interested%20in%20the%20Whiteboard%20Markers" class="cta-button">Buy Now</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Quality Trading. All Rights Reserved.</p>
+        <div class="contact-info">
+            <p>Email: qualitytrading1122@example.com</p>
+            <p>Phone: 9037493068</p>
+            <p>WhatsApp: 9037493068</p>
+        </div>
+    </footer>
+</body>
+
+</html>

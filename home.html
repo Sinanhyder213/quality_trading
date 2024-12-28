@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quality Trading - Office & School Stationery</title>
+    <style>
+        /* Resetting some default styles */
+        body, h1, h2, p, a {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background-color: #0f4b5c;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        nav {
+            margin: 20px 0;
+        }
+
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #f0a500;
+        }
+
+        section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 40px;
+            animation: slideIn 1.5s ease-out;
+        }
+
+        .product {
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            width: 250px;
+            margin: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .product img {
+            width: 100%;
+            border-radius: 8px 8px 0 0;
+        }
+
+        .product h3 {
+            text-align: center;
+            padding: 10px;
+            font-size: 1.4rem;
+        }
+
+        .product p {
+            padding: 0 20px 20px;
+            color: #777;
+            font-size: 1rem;
+            text-align: center;
+        }
+
+        .product:hover {
+            transform: translateY(-10px);
+        }
+
+        footer {
+            background-color: #0f4b5c;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #f0a500;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: #f0a500;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 25px;
+            font-size: 1.2rem;
+            margin-top: 20px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #e37c00;
+        }
+
+        .contact-info {
+            background-color: #0f4b5c;
+            color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        .contact-info p {
+            font-size: 1.1rem;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Quality Trading</h1>
+        <p>Your one-stop shop for Office & School Stationery</p>
+        <nav>
+            <a href="products.html">Products</a>
+            <a href="#contact">Contact</a>
+            <a href="https://wa.me/9037493068" target="_blank">WhatsApp</a>
+        </nav>
+    </header>
+
+    <section id="products">
+        <h2>Our Bestselling Products</h2>
+        <div class="product">
+            <img src="notebook.webp" alt="Notebook">
+            <h3>Notebook</h3>
+            <p>High-quality notebooks for your school or office needs.</p>
+            <a href="https://wa.me/9037493068?text=I'm%20interested%20in%20the%20Notebook" class="cta-button">Buy Now</a>
+        </div>
+
+        <div class="product">
+            <img src="pen.webp" alt="Pen">
+            <h3>Pen Set</h3>
+            <p>Complete your stationery collection with our premium pen sets.</p>
+            <a href="https://wa.me/9037493068?text=I'm%20interested%20in%20the%20Pen%20Set" class="cta-button">Buy Now</a>
+        </div>
+
+        <div class="product">
+            <img src="papperclips.jpg" alt="papperclips">
+            <h3>Paper Clips</h3>
+            <p>Essential for keeping your documents organized.</p>
+            <a href="https://wa.me/9037493068?text=I'm%20interested%20in%20the%20Paper%20Clips" class="cta-button">Buy Now</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>Follow us for updates!</p>
+        <p>&copy; 2024 Quality Trading. All Rights Reserved.</p>
+        <div class="contact-info" id="contact">
+            <p>Email: qualitytrading1122@example.com</p>
+            <p>Phone: 9037493068</p>
+            <p>WhatsApp: 9037493068</p>
+        </div>
+    </footer>
+</body>
+
+</html>
